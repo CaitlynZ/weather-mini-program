@@ -1,0 +1,41 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+	<view class="region">
+		<text class="region-text">当前城市:</text>
+		<picker class="region-picker" mode="region" bindchange="changeRegion">
+			<view>{{region}}</view>
+		</picker>
+	</view>
+
+	<view class="weather">
+		<text class="weather-description">{{now.temp}}℃ {{now.text}}</text>
+		<image src="../../mediafiles/{{icon}}.png" class="weather-icon">天气标识</image>
+	</view>
+
+	<view class="details">
+		<view class="detail-bar">
+			<view class="detail-item">降水量</view>
+			<view class="detail-item">气压</view>
+			<view class="detail-item">能见度</view>
+		</view>
+		<view class="detail-bar">
+			<view class="detail-item">{{now.precip}}mm</view>
+			<view class="detail-item">{{now.pressure}}hPa</view>
+			<view class="detail-item">{{now.vis}}km</view>
+		</view>
+		<view class="detail-bar">
+			<view class="detail-item">风向</view>
+			<view class="detail-item">风速</view>
+			<view class="detail-item">风力</view>
+		</view>
+		<view class="detail-bar">
+			<view class="detail-item">{{now.windDir}}</view>
+			<view class="detail-item">{{now.windSpeed}}km/h</view>
+			<view class="detail-item">{{now.windScale}}级</view>
+		</view>
+	</view>
+	<view>
+		<button disabled="{{notFound}}" bindtap="toThreeDay" class="button">获取三日预报</button>
+	</view>
+
+</view>

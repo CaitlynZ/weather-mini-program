@@ -1,0 +1,22 @@
+<!--pages/threeDay/threeDay.wxml-->
+<view class="container">
+	<view class="region-name">
+		<text>{{region}}</text>
+	</view>
+
+	<view class="days">
+		<view class="day" wx:for="{{forcasts}}">
+			<view class="day-left">
+				<text>{{item.fxDate}}</text>
+			</view>
+			<view class="day-mid">
+				<image class="weather-icon-small" src="../../mediafiles/{{item.iconDay}}.png"></image>
+			</view>
+			<view class="day-right">
+				<view>{{item.tempMin}} ~ {{item.tempMax}} ℃</view>
+				<view>{{item.windSpeedDay}} km/h</view>
+			</view>
+		</view>
+	</view>
+
+</view>

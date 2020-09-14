@@ -1,0 +1,47 @@
+/* pages/threeDay/threeDay.wxss */
+.region-name {
+  display: flex;
+  font-size: 55rpx;
+  color: #13227a;
+  font-weight: 600;
+  width: 90%;
+  justify-content: center;
+}
+
+.days {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.day {
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ margin: 30rpx;
+}
+.day-left {
+  display: flex;
+  color: #13227a;
+  font-size: 40rpx;
+  font-weight: 600;
+  width: 20%;
+}
+.day-mid {
+  width: 25%;
+}
+.day-right {
+  width: 45%;
+  display: flex;
+  flex: 1;
+  font-size: 35rpx;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.weather-icon-small {
+  height: 150rpx;
+  width: 150rpx;
+  margin: auto;
+}
+
+

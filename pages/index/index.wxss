@@ -1,0 +1,65 @@
+/* pages/index/index.wxss */
+
+.region {
+  display: flex;
+  width: 85%;
+  border-style: solid;
+  border-radius: 15rpx;
+  border-color: #cdcdcd;
+}
+
+.region-text {
+  padding:15rpx;
+  width:25%;
+  margin: auto;
+}
+
+.region-picker {
+  width: 60%;
+  padding:15rpx;
+  margin: auto;
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-description {
+  color: #13227a;
+  font-size: 60rpx;
+  font-weight: 600;
+}
+
+.weather-icon {
+  height: 400rpx;
+  width: 400rpx;
+  margin-top: 25rpx;
+}
+
+.detail-bar {
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  margin: 10rpx;
+}
+
+.detail-item {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  margin: 10rpx;
+}
+
+.button {
+  color: #13227a;
+}
