@@ -1,9 +1,9 @@
 <!--pages/index/index.wxml-->
 <view class="container">
 	<view class="region">
-		<text class="region-text">当前城市:</text>
+		<text class="region-text"> 当前城市:</text>
 		<picker class="region-picker" mode="region" bindchange="changeRegion">
-			<view>{{region}}</view>
+			<view>{{regionText}}</view>
 		</picker>
 	</view>
 
@@ -35,7 +35,7 @@
 		</view>
 	</view>
 	<view>
-		<button disabled="{{notFound}}" bindtap="toThreeDay" class="button">获取三日预报</button>
+		<button bindtap="toThreeDay" class="button">获取三日预报</button>
 	</view>
 
 </view>

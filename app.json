@@ -3,6 +3,11 @@
     "pages/index/index",
     "pages/threeDay/threeDay"
   ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于获取当前城市天气，取消可手动选择城市" 
+    }
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#13227a",

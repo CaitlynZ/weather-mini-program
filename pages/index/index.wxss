@@ -6,16 +6,17 @@
   border-style: solid;
   border-radius: 15rpx;
   border-color: #cdcdcd;
+  font-size: 35rpx;
 }
 
 .region-text {
   padding:15rpx;
-  width:25%;
+  width: 30%;
   margin: auto;
 }
 
 .region-picker {
-  width: 60%;
+  width: 70%;
   padding:15rpx;
   margin: auto;
 }
@@ -62,4 +63,5 @@
 
 .button {
   color: #13227a;
+  margin-bottom: 30px;
 }

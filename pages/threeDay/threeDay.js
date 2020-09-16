@@ -36,7 +36,7 @@ Page({
   onLoad: function (options) {
     this.setData({
       regionId: app.globalData.regionId,
-      region: app.globalData.region
+      regionText: app.globalData.regionText
     })
     this.getForcase()
   },
